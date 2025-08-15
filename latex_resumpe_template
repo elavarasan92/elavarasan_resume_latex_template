@@ -1,0 +1,234 @@
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Elavarasan Nadarajan} % Your Name
+\newcommand{\course}{Electronics and Communication Engineering} % Your Program
+\newcommand{\phone}{8531990331} % Your Phone Number
+\newcommand{\emaila}{rameshelava@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & \\  
+  {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone} & \href{https://github.com/elavarasan92}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \\  
+  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} & \href{www.linkedin.com/in/elavarasan92/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}} \\
+\end{tabularx}
+}
+
+%-----------Core skills-----------------
+\section{\textbf{Core Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, SQL} \\
+     \textbf{Frameworks}{: Spring Boot, Spring Data JPA, Spring Security, Hibernate, Spring Batch} \\
+     \textbf{Architectures}{: Microservices, RESTful APIs} \\
+     \textbf{Cloud \& DevOps}{: AWS (EC2, EKS, S3, CloudWatch), Kubernetes, Docker, Git, Jenkins, GitHub Actions, SonarQube} \\
+     \textbf{Databases \& Caching}{: PostgreSQL, MySQL} \\
+     \textbf{Practices}{: TDD/BDD, Code Reviews, Agile/Scrum, Distributed Tracing (Zipkin)} \\
+     \textbf{Observability \& Performance}{: Caching, Metrics/Logging, Profiling, Query Optimization} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {AstraZeneca}{Chennai, India}
+  {Senior Consultant}{Sep 2023 -- Present}
+  \resumeItemListStart
+    \item {Engineered secure, high-throughput microservices in Java, Spring Boot, and REST, improving average response times by 35\% via Redis caching and query tuning.}
+    \item {Containerized services with Docker and orchestrated on AWS EKS to sustain 99.99\% service availability under peak traffic.}
+    \item {Automated CI/CD with GitHub Actions, reducing deployment time from 2 hours to 20 minutes and increasing release frequency to multiple times per week.}
+    \item {Implemented distributed tracing and structured logging to cut MTTR(Mean Time To Respond) by 40\% during incidents.}
+    \item {Championed coding standards, peer reviews, and secure coding to reduce production defects.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {EnKash}{Remote}
+  {Senior Software Engineer}{May 2022 -- Sep 2023}
+  \resumeItemListStart
+    \item {Led the development of Olympus (cashflow management and invoicing platform) and an Expense Management Tool, enabling corporate clients to manage ₹500+ crore transactions/month.}
+    \item {Implemented critical features including Tally integration, vendor payments, seamless banking integrations, and batch processing using Spring Batch.}
+    \item {Designed and delivered a Backoffice Application and spearheaded a full application \& website redesign for improved user experience and scalability.}
+    \item {Built and optimized 4+ Spring Boot microservices with idempotent APIs and robust retry patterns to ensure high reliability.}
+    \item {Introduced Zipkin tracing and centralized logging, accelerating root-cause analysis by 60\% and improving on-call efficiency.}
+    \item {Tuned PostgreSQL/Redis usage and connection pooling to handle traffic spikes without downtime.}
+    \item {Contributed to hiring processes and participated in strategic discussions with company founders, influencing technical direction.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Synechron}{Chennai, India}
+  {Senior Associate}{Oct 2021 -- May 2022}
+  \resumeItemListStart
+    \item {Enhanced trading platform microservices for real-time execution, supporting 100+ concurrent dealers with low-latency operations.}
+    \item {Built a risk management module in Spring Boot/Spring Data JPA that reduced exposure incidents by 12\% through pre-trade checks and limits enforcement.}
+    \item {Integrated external trading systems and messaging for reliable, near real-time data flows.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Capgemini}{Chennai, India}
+  {Consultant}{Aug 2018 -- Oct 2021}
+  \resumeItemListStart
+    \item {Re-architected a banking rewards platform using Spring Batch to process 8M+ daily records, cutting DB load by 40\% and stabilizing SLAs.}
+    \item {Migrated monolith components to microservices, reducing planned downtime by 70\% and enabling independent deployments.}
+    \item {Implemented Spring Security + OAuth2 and improved audit readiness.}
+    \item {Collaborated in Agile sprints with UX/FE teams, delivering API-first features and improving API usability through consistent contracts.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {MRCube Solutions}{Bengaluru, India}
+  {Senior Technical Consultant}{Oct 2016 -- Aug 2018}
+  \resumeItemListStart
+    \item {Built microservices for a mock interview platform (RockInterview) using Spring, Hibernate, and MySQL; optimized SQL to reduce response times and database costs.}
+    \item {Proactively identified and resolved production bottlenecks; recognized for reliable delivery and clean, maintainable code.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Infrasoft Technologies}{}
+  {Trainee}{Jun 2015 -- Sep 2016}
+  \resumeItemListStart
+    \item {Developed an insurance monolith in Java with MySQL persistence for policyholder and premium data; collaborated across BA/QA/product functions in a Waterfall environment.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics and Communication}{CGPA: 7.5}
+      {Jerusalem College Of Engineering, Chennai}{2010-14}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+%-------------------------------------------
+\end{document}
